@@ -4,5 +4,5 @@ Website : Tools for web developpers
 ### Autors
 - Hajar Markaoui
 - Sandrine Leveque
-- Christophe Leveque
+- Christophe Faivre
 - Maxime Caspani
