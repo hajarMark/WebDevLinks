@@ -15,12 +15,16 @@ body {
 *****************************************/
 .navbar {
     display: flex;
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
     background-color: #588c7e;
     justify-content: space-between;
 }
 
 #menuToggle {
-    display: inline-block;
+    display: inline-block;    
     z-index: 1;  
     -webkit-user-select: none;
     user-select: none;
@@ -137,6 +141,35 @@ body {
 }
 
 
+/*******************************************************
+    course level key : beginner/intermediate/advanced;
+********************************************************/
+.beginner {
+    background-color: green;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+}
+
+.intermediate {
+    background-color: orange;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+}
+
+.advanced {
+    background-color: red;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+}
 /*************************************
     Home page style
 *****************************************/
@@ -145,11 +178,29 @@ body {
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
-    margin-top: 80px;
     height: 800px;
+    width: 100%;
 }
-    
+
+.themediv {    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.themediv a {
+    align-self: center;
+    text-decoration: none;
+}
+
+.themediv h2 {
+    align-self: center;
+    color:#588c7e;
+    font-size: 28px;
+}
+
 .hmtlicon {
+    display: inline-block;
     color: #fd7e14;
     font-size: 20em;
 }
@@ -170,6 +221,7 @@ body {
 *****************************************/
 .content {
     display: flex;
+    flex-flow: column nowrap;
 }
 
 .theme {
@@ -179,6 +231,12 @@ body {
     width: 300px;
 }
 
+.link {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 /*************************************
     Footer style
