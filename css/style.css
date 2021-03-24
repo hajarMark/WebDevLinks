@@ -137,6 +137,35 @@ body {
 }
 
 
+/*******************************************************
+    course level key : beginner/intermediate/advanced;
+********************************************************/
+.beginner {
+    background-color: green;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+}
+
+.intermediate {
+    background-color: orange;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+}
+
+.advanced {
+    background-color: red;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+}
 /*************************************
     Home page style
 *****************************************/
@@ -170,6 +199,7 @@ body {
 *****************************************/
 .content {
     display: flex;
+    flex-flow: column nowrap;
 }
 
 .theme {
@@ -179,6 +209,12 @@ body {
     width: 300px;
 }
 
+.link {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 /*************************************
     Footer style
