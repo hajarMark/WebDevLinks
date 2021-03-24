@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The essentials links for web development</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The essential links for web development</title>
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Lets use some nice icons set :) -->
+        <script src="https://kit.fontawesome.com/8e8aa578fc.js" crossorigin="anonymous"></script>
+    </head>
 
-<body>
-    <nav>
-        <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="glossary.html">Glossary</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-        </ul>
-    </nav>
+    <body>
+        <div id="navbar">
+            <nav class="menu">
+                <span class="iconstyle"><i class="fas fa-bars fa-2x"></i></span>
+                <a href="index.html">Home</a>
+            </nav>
+            <header><h1 class="pageTitle">The web developpers vault</h1></header>            
+            <div class="right"></div><!-- Empty content to flex align the title in the center -->
+        </div>
 
-    <main>
+        <main id="homepage">
+            <div class="childdiv"><span class="hmtlicon"><i class="fab fa-html5"></i></span></div>
+            <div class="childdiv"><span class="cssicon"><i class="fab fa-css3-alt"></i></span></div>            
+            <div class="childdiv"><span class="jsicon"><i class="fab fa-js-square"></i></span></div>
+            <div class="childdiv"></div>  
+        </main>
 
-    </main>
-
-    <footer>
-
-    </footer>
-</body>
+        <footer class="footer">            
+            <a href="glossary.html">Glossary</a>
+            <a href="contact.html">Contact us</a>
+        </footer>
+    </body>
 
 </html>

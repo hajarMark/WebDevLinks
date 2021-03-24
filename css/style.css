@@ -1,0 +1,113 @@
+/*************************************
+    It's all about style
+*****************************************/
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*************************************
+    Menu display
+*****************************************/
+#navbar {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;    
+    height: 60px;
+    display: flex;
+    background-color: #588c7e;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconstyle {
+    color:white;
+    margin-left: 10px;
+}
+
+.menu, .right {    
+    flex: 1;
+}
+
+.menu a {
+    font-size: 18px;
+    color: white;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+.pageTitle {    
+    font-size: 22px;
+    color: white;
+}
+
+
+/*************************************
+    Home page style
+*****************************************/
+#homepage {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 80px;
+    height: 800px;
+}
+    
+.childdiv {
+    width: 40%;
+    height: 40%;
+}
+
+.hmtlicon {
+    color: #fd7e14;
+    font-size: 20em;
+}
+
+.cssicon {
+    color: #82c91e;
+    font-size: 20em;
+}
+
+.jsicon {
+    color: #be4bdb;
+    font-size: 20em;
+}
+
+
+/*************************************
+    Theme pages styles
+*****************************************/
+.content {
+    display: flex;
+}
+
+.theme {
+    background-image: url("https://via.placeholder.com/300.png?text=Theme");
+    text-align: center; 
+    height: 300px;
+    width: 300px;
+}
+
+
+/*************************************
+    Footer style
+*****************************************/
+.footer {
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 60px;
+    background-color: #588c7e;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a {
+    font-size: 12px;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
