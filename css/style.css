@@ -8,33 +8,127 @@ body {
 
 /*************************************
     Menu display
+
+    Burger Menu, courtesy of Erik Terwan
+    @ https://codepen.io/erikterwan/pen/EVzeRP
+
 *****************************************/
-#navbar {
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;    
-    height: 60px;
+.navbar {
     display: flex;
     background-color: #588c7e;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.iconstyle {
-    color:white;
-    margin-left: 10px;
+#menuToggle {
+    display: inline-block;
+    z-index: 1;  
+    -webkit-user-select: none;
+    user-select: none;
+    margin-top: 15px;
 }
 
-.menu, .right {    
-    flex: 1;
-}
-
-.menu a {
-    font-size: 18px;
-    color: white;
-    padding: 0 20px;
+#menuToggle a {
     text-decoration: none;
+    color: white;  
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  color: royalblue;
+}
+
+/* Clickable zone of the burger */
+#menuToggle input {
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  position: relative;  
+  background: white;
+  border-radius: 3px;  
+  z-index: 1;  
+  transform-origin: 4px 0px;  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: white;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  position: absolute;
+  width: 150px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 100px;  
+  background: #588c7e;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li {
+  padding: 12px 0 0 10px;
+  font-size: 20px;
+}
+
+#menuToggle input:checked ~ ul {
+  transform: none;
 }
 
 .pageTitle {    
@@ -48,17 +142,13 @@ body {
 *****************************************/
 #homepage {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     align-items: center;
+    justify-content: space-around;
     margin-top: 80px;
     height: 800px;
 }
     
-.childdiv {
-    width: 40%;
-    height: 40%;
-}
-
 .hmtlicon {
     color: #fd7e14;
     font-size: 20em;
@@ -106,7 +196,7 @@ body {
 }
 
 .footer a {
-    font-size: 12px;
+    font-size: 14px;
     color: white;
     padding: 14px 16px;
     text-decoration: none;
