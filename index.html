@@ -11,10 +11,26 @@
     </head>
 
     <body>
-        <div id="navbar">
-            <nav class="menu">
-                <span class="iconstyle"><i class="fas fa-bars fa-2x"></i></span>
-                <a href="index.html">Home</a>
+        <div class="navbar">
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <!--
+                    A fake / hidden checkbox is used as click reciever so you can use the :checked selector on it.
+                    -->
+                    <input type="checkbox" />                    
+                    <!--
+                    Some spans to act as a hamburger.
+                    -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="index.html"><li>Home</li></a>
+                        <a href="glossary.html"><li>Glossary</li></a>
+                        <a href="theme_html.html"><li>Html Links</li></a>
+                        <a href="contactus.html"><li>Contact us</li></a>
+                    </ul>
+                </div>
             </nav>
             <header><h1 class="pageTitle">The web developpers vault</h1></header>            
             <div class="right"></div><!-- Empty content to flex align the title in the center -->
@@ -24,7 +40,7 @@
             <div class="childdiv"><span class="hmtlicon"><i class="fab fa-html5"></i></span></div>
             <div class="childdiv"><span class="cssicon"><i class="fab fa-css3-alt"></i></span></div>            
             <div class="childdiv"><span class="jsicon"><i class="fab fa-js-square"></i></span></div>
-            <div class="childdiv"></div>  
+            <!-- <div class="childdiv"></div>  -->
         </main>
 
         <footer class="footer">            
