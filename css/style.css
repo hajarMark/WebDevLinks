@@ -222,13 +222,21 @@ body {
 .content {
     display: flex;
     flex-flow: column nowrap;
+    margin-top: 80px;
 }
 
 .theme {
-    background-image: url("https://via.placeholder.com/300.png?text=Theme");
-    text-align: center; 
-    height: 300px;
-    width: 300px;
+   display: flex;
+   flex-flow: row wrap;
+   margin-left: 3vw;
+}
+
+.description {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: space-around;
+  margin-left: 3vw;
 }
 
 .link {
