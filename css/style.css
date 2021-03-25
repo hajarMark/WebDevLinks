@@ -301,6 +301,16 @@ removing decoration ***/
     padding-bottom: 1.5px; 
 
 }
+.logo{
+    width: 50px;
+}
+.description_link {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: space-around;
+    margin-left: 3vw;
+  }
 
 /*************************************
     Footer style
