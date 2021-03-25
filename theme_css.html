@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The essential links for web development</title>
+        <link rel="stylesheet" href="css/style.css">
+          <!-- Lets use some nice icons set :) -->
+        <script src="https://kit.fontawesome.com/8e8aa578fc.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+ <div class="navbar">
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <!--
+                    A fake / hidden checkbox is used as click reciever so you can use the :checked selector on it.
+                    -->
+                    <input type="checkbox" />                    
+                    <!--
+                    Some spans to act as a hamburger.
+                    -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="index.html"><li>Home</li></a>
+                        <a href="glossary.html"><li>Glossary</li></a>
+                        <a href="theme_html.html"><li>Html Links</li></a>
+						<a href="theme_css.html"><li>CSS Links</li></a>
+						<a href="theme_js.html"><li>Javascript Links</li></a>
+                        <a href="contact.html"><li>Contact us</li></a>
+                    </ul>
+                </div>
+            </nav>
+            <header><h1 class="pageTitle">The web developpers vault</h1></header>            
+            <div class="right"></div><!-- Empty content to flex align the title in the center -->
+        </div>
+        <main>
+            <article class="content">
+                <section class="theme">
+                    <span class="cssicon"><i class="fab fa-css3"></i></span>
+                    <span class="description">
+                    <h1> Cascading Style Sheets (CSS) </h1>
+                    <span>
+                         <span> What is CSS?
+							<ul>
+								<li>CSS stands for Cascading Style Sheets</li>
+								<li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+								<li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+								<li>External stylesheets are stored in CSS files document.</li>
+							</ul>
+						</span>     
+                </section>
+
+                <section class="tutorials">
+                    <h3>Tutorials.</h3>
+                    <ul> 
+                        <li class="link"><p class="beginner">B</p>&nbsp;<a href="https://cssreference.io/" target="_blank">Popular properties on CSS</a></li>
+						<li class="link"><img class="logo" src="logo_cssreference.png"><p class="description_link">Learn by example: cssreference.io is a free visual guide to CSS. It features the most popular properties, and explains them with illustrated and animated examples..</p></li>
+                        
+						<li class="link"><p class="beginner">B</p>&nbsp;<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units/Creating_hyperlinks" target="_blank">CSS values and units</a></li>
+						<li class="link"><img class="logo" src="logo_mozilla.png"><p class="description_link">Every property used in CSS has a value type defining the set of values that are allowed for that property...</p></li>                       
+					   
+						<li class="link"><p class="beginner">B</p>&nbsp;<a href="https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">The bases of Mozilla CSS</a></li>
+						<li class="link"><img class="logo" src="logo_mozilla.png"><p class="description_link">We'll answer questions like: How do I make text red? How do I make content display at a certain location in the (webpage) layout? How do I decorate my webpage with background images and colors?</p></li>                       
+					   
+						<li class="link"><p class="advanced">B</p>&nbsp;<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">CSS Reference</a></li>
+						<li class="link"><img class="logo" src="logo_mozilla.png"><p class="description_link">Use this CSS reference to browse an alphabetical index of all of the standard CSS properties, pseudo-classes, pseudo-elements, data types, functional notations and at-rules. You can also browse key CSS concepts and a list of selectors organized by type. Also included is a brief DOM-CSS / CSSOM reference</p></li> 
+						 
+						<li class="link"><p class="advanced">I</p>&nbsp;<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">A Complete Guide to Flexbox</a></li>
+						<li class="link"><img class="logo" src="Logo_CSSTricks.png"><p class="description_link">This complete guide explains everything about flexbox, focusing on all the different possible properties for the parent element (the flex container) and the child elements (the flex items). It also includes history, demos, patterns, and a browser support chart.</p></li>
+				   </ul>
+                </section>
+
+                <section class="videos">
+                    <h3>Videos.</h3>
+                    <ul> 
+                        <li class="link"><p class="beginner">B</p>&nbsp;<a href="https://www.youtube.com/watch?v=mri5qNNX5WQ" target="_blank">Google Chrome Developer Tools Crash Course (En)</a></li>
+                        <li class="link"><img class="logo" src="logo_Youtube.png"><p class="description_link">A video to understand the css selectors.</p></li>   
+											   
+						<li class="link"><p class="beginner">B</p>&nbsp;<a href="https://www.youtube.com/watch?v=wu1Sk8iOPnE" target="_blank">Discovery of CSS: Media query and "responsive (Fr)"</a></p></li>
+                        <li class="link"><img class="logo" src="logo_Youtube.png"><p class="description_link">Explanation of query media in French.</p></li>  
+					</ul>  
+  
+                </section>
+
+                <section class="tools">
+                  <h3>Tools.</h3>
+                   <ul> 
+                        <li class="link"><p class="intermediate">I</p>&nbsp;<a href="https://cssgridgarden.com/" target="_blank">CSS Grid Garden, to learn about CSS</a></li>
+                        <li class="link"><img class="logo" src="Logo_gridGarden.jfif"><p class="description_link">Welcome to Grid Garden, where you write CSS code to grow your carrot garden! Water only the areas that have carrots by using the grid-column-start property</p></li>
+						
+						<li class="link"><p class="advanced">A</p>&nbsp;<a href="https://flukeout.github.io/" target="_blank">CSS Diner, to learn CSS selectors</a></li>
+                        <li class="link"><img class="logo" src="Logo_cssDiner.jpg"><p class="description_link">A fun game to learn and practice CSS selectors.</p></li>
+						
+						<li class="link"><p class="advanced">A</p>&nbsp;<a href="https://flexboxfroggy.com/" target="_blank">Flexbox Froggy, to understand the Flexbox layout</a></li>
+						<li class="link"><img class="logo" src="Logo_Froggy.png"><p class="description_link">A game where you help Froggy and friends by writing CSS code! Guide this frog to the lilypad on the right by using the ...</p></li>
+				   </ul> 
+                </section>
+            </article>
+        </main>
+        <footer class="footer">            
+            <a href="glossary.html">Glossary</a>
+            <a href="contact.html">Contact us</a>
+        </footer>
+    </body>
+
+</html>
