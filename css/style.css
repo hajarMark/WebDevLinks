@@ -223,6 +223,7 @@ body {
     display: flex;
     flex-flow: column nowrap;
     margin-top: 80px;
+    color: #588c7e;
 }
 
 .theme {
@@ -244,6 +245,18 @@ body {
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
+}
+
+.link a {
+    color: #588c7e;
+    background-color: #d0e2dd; 
+    border-radius: 10px;
+    text-decoration: none;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 1.5px;
+    padding-bottom: 1.5px; 
+
 }
 
 /*************************************
