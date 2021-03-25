@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The essential links for web development</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
         <!-- Lets use some nice icons set :) -->
         <script src="https://kit.fontawesome.com/8e8aa578fc.js" crossorigin="anonymous"></script>
     </head>
@@ -14,20 +17,17 @@
         <div class="navbar">
             <nav role="navigation">
                 <div id="menuToggle">
-                    <!--
-                    A fake / hidden checkbox is used as click reciever so you can use the :checked selector on it.
-                    -->
+                    <!-- A fake / hidden checkbox is used as click reciever so you can use the :checked selector on it. -->
                     <input type="checkbox" />                    
-                    <!--
-                    Some spans to act as a hamburger.
-                    -->
+                    <!-- Some spans to act as a hamburger. -->
                     <span></span>
                     <span></span>
                     <span></span>
                     <ul id="menu">
                         <a href="index.html"><li>Home</li></a>
                         <a href="glossary.html"><li>Glossary</li></a>
-                        <a href="theme_HTML.html"><li>Html Links</li></a>
+                        <a href="theme_html.html"><li>Html Links</li></a>                        
+                        <a href="theme_js.html"><li>Javascript Links</li></a>
                         <a href="contact.html"><li>Contact us</li></a>
                     </ul>
                 </div>                
@@ -40,21 +40,27 @@
             <article class="welcome">
                 Finding resources on the web is not as easy as we could think. There are a lot of articles around that covers differents topics but depending on your 
                 skills they might be either  way too hard to understand, of pretty useless since you're far more experienced than the audience the article is trying to reach.
-                <br><br>
+                <br>
                 So what if there was a site that was referencing those articles, tutorials and videos, evaluating them and listing those appearing the more useful &#63;
-                <br><br>
+                <br>
                 This is the purpose of that site. You'll find below resources on the most common langages used on the web, and if you're lost with all those words such as HTML, CSS, Web... 
                 we even bring you a glossary!  
             </article>
             <div class="themediv">
-                <a href="theme_HTML.html">
+                <a href="theme_html.html">
                 <p class="themedescription">HTML is the World Wide Web langage and your first step to Web development.</p>
                     <h2>HTML</h2>
                     <div class="hmtlicon"><i class="fab fa-html5"></i></div>
                 </a>
             </div>
-            <div class="themediv"><h2>Css</h2><span class="cssicon"><i class="fab fa-css3-alt"></i></span></div>            
-            <div class="themediv"><h2>Javascript</h2><span class="jsicon"><i class="fab fa-js-square"></i></span></div>
+            <div class="themediv"><h2>Css</h2><span class="cssicon"><i class="fab fa-css3-alt"></i></span></div>
+            <div class="themediv">
+                <a href="theme_js.html">
+                <p class="themedescription">Javascript is all about bringing dynamic behavior to HTML pages. It brings magic to your sites!</p>
+                    <h2>Javascript</h2>
+                    <div class="jsicon"><i class="fab fa-js-square"></i></div>
+                </a>
+            </div> 
             <!-- <div class="themediv"></div>  -->
         </main>
 
