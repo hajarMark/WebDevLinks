@@ -135,6 +135,12 @@ body {
   transform: none;
 }
 
+/*** Outside Index page the title of the page can be a link to index, thus
+removing decoration ***/
+.pageTitleLink {
+    text-decoration: none;
+}
+
 .pageTitle {    
     font-size: 22px;
     color: white;
@@ -184,25 +190,52 @@ body {
 
 .themediv {    
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-flow: row nowrap;
+    justify-content: center;
+    position: relative;
 }
 
+.themedescription {
+    position: absolute;
+    background: #588c7e;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;    
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+    height: 250px;
+    text-align: center;
+    padding-top: 150px;
+    border: 1px solid #588c7e;
+    border-radius: 10px;
+}
+
+.themediv:hover .themedescription {
+    visibility: visible;
+    opacity: 0.97;
+}
+
+
 .themediv a {
+    display: block;
     align-self: center;
     text-decoration: none;
 }
 
 .themediv h2 {
-    align-self: center;
+    text-align: center;
     color:#588c7e;
     font-size: 28px;
+    height: 40px;
+    margin-bottom: 0;
 }
 
 .hmtlicon {
-    display: inline-block;
+    display: block;
     color: #fd7e14;
     font-size: 20em;
+    margin-top: 0;
+    align-self: flex-start;
 }
 
 .cssicon {
@@ -222,13 +255,22 @@ body {
 .content {
     display: flex;
     flex-flow: column nowrap;
+    margin-top: 80px;
+    color: #588c7e;
 }
 
 .theme {
-    background-image: url("https://via.placeholder.com/300.png?text=Theme");
-    text-align: center; 
-    height: 300px;
-    width: 300px;
+   display: flex;
+   flex-flow: row wrap;
+   margin-left: 3vw;
+}
+
+.description {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: space-around;
+  margin-left: 3vw;
 }
 
 .link {
@@ -237,6 +279,28 @@ body {
     justify-content: flex-start;
     align-items: center;
 }
+
+.link a {
+    color: #588c7e;
+    background-color: #d0e2dd; 
+    border-radius: 10px;
+    text-decoration: none;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 1.5px;
+    padding-bottom: 1.5px; 
+
+}
+.logo{
+    width: 50px;
+}
+.description_link {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: space-around;
+    margin-left: 3vw;
+  }
 
 /*************************************
     Footer style
