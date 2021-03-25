@@ -1,8 +1,36 @@
 #glossaryLinks {
-    display: flex;
-    justify-content: center;
+    font-family: 'Lato', sans-serif;
     width: 100%;
+    height: 80px;
     text-align: center;
-    height: 40px;
-    margin-top: 120px;
+    font-variant: small-caps;
+    font-size: 18px;
+}
+
+.glossary {
+    display: flex;
+    margin-left: 20px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.headLetter {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+dt {
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    font-variant: small-caps;
+    padding-top: 15px;
+    margin-left: 25px;
+}
+
+dd {
+    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-left: 60px;
 }
