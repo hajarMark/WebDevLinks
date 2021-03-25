@@ -7,8 +7,8 @@ body {
     left: 0;
     right: 0;
     margin: 0;
+    padding: 0;
 }
-
 
 /*** 
     -> Page title next to the menu
@@ -62,7 +62,7 @@ body {
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
-    height: 800px;
+    margin-bottom: 60px;
 }
 
 .welcome {
@@ -73,6 +73,7 @@ body {
     height: 80px;
     padding-top: 30px;
     font-size: 16px;
+    margin-top: 60px;
 }
 
 .themediv {    
@@ -80,6 +81,7 @@ body {
     flex-flow: row nowrap;
     justify-content: center;
     position: relative;
+    margin-top: 120px;
 }
 
 .themedescription {
