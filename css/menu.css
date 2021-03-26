@@ -30,6 +30,10 @@
   font-size: 20px;
 }
 
+.flatmenu a:hover {  
+  color: royalblue;
+}
+
 #menuToggle {
     display: inline-block;    
     z-index: 1;  
