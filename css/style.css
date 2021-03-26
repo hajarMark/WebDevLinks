@@ -142,6 +142,8 @@ body {
     display: flex;
     flex-flow: column nowrap;
     margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 2vw;
     color: #588c7e;
 }
 
@@ -149,6 +151,18 @@ body {
    display: flex;
    flex-flow: row wrap;
    margin-left: 3vw;
+}
+
+.legend {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #588c7e;
+    background-color: #d0e2dd; 
+    border-radius: 10px;
+    text-decoration: none;
+    margin-right: 2vw;
 }
 
 .description {
@@ -185,7 +199,7 @@ body {
     flex-flow: column wrap;
     justify-content: center;
     align-items: space-around;
-    margin-left: 3vw;
+    margin-left: 2vw;
   }
 
 /*************************************
