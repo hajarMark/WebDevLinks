@@ -3,9 +3,6 @@
 *****************************************/
 body {
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    top: 0;
-    left: 0;
-    right: 0;
     margin: 0;
     padding: 0;
 }
@@ -319,4 +316,8 @@ h2 ~ div {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+.footer a:hover {
+    color: royalblue;
 }
