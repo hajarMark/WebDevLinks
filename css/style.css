@@ -256,6 +256,7 @@ removing decoration ***/
     display: flex;
     flex-flow: column nowrap;
     margin-top: 80px;
+    margin-bottom: 80px;
     color: #588c7e;
 }
 

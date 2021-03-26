@@ -43,3 +43,7 @@
 [0325/103427.258:ERROR:registration_protocol_win.cc(130)] TransactNamedPipe: Le canal de communication a été fermé. (0x6D)
 [0325/103515.689:ERROR:registration_protocol_win.cc(130)] TransactNamedPipe: Le canal de communication a été fermé. (0x6D)
 [0325/105714.151:ERROR:registration_protocol_win.cc(130)] TransactNamedPipe: Le canal de communication a été fermé. (0x6D)
+[0325/175205.789:ERROR:registration_protocol_win.cc(130)] TransactNamedPipe: Le canal de communication a été fermé. (0x6D)
+[0326/090722.580:ERROR:registration_protocol_win.cc(130)] TransactNamedPipe: Le canal de communication a été fermé. (0x6D)
+[0326/090742.794:ERROR:registration_protocol_win.cc(130)] TransactNamedPipe: Le canal de communication a été fermé. (0x6D)
+[0326/093149.951:ERROR:registration_protocol_win.cc(130)] TransactNamedPipe: Le canal de communication a été fermé. (0x6D)
