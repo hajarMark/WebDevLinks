@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The essential links for web development</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/glossary.css">
+        <!-- A fancy set of font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <!-- Lets use some nice icons set :) -->
+        <script src="https://kit.fontawesome.com/8e8aa578fc.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <div class="menugroup">
+                <nav role="navigation">
+                    <div id="menuToggle">
+                        <!-- A fake / hidden checkbox is used as click reciever so you can use the :checked selector on it. -->
+                        <input type="checkbox" />                    
+                        <!-- Some spans to act as a hamburger. -->
+                        <span class="burger"></span>
+                        <span class="burger"></span>
+                        <span class="burger"></span>
+                        <ul id="menu">
+                            <a href="index.html"><li>Home</li></a>
+                            <a href="theme_html.html"><li>Html Links</li></a>                        
+                            <a href="theme_js.html"><li>Javascript Links</li></a>
+                            <a href="theme_css.html"><li>Css Links</li></a>
+                            <a href="theme_php.html"><li>Php Links</li></a>
+                            <a href="theme_sql.html"><li>SQL Links</li></a>
+                            <a href="contact.html"><li>Contact us</li></a>
+                        </ul>
+                    </div>
+                </nav>
+                <span class="flatmenu"><a href="index.html">Home</a></span>
+            </div>  
+            <header><a href="index.html" class="pageTitleLink"><h1 class="pageTitle">The web developpers glossary</h1></a></header>
+            <div class="right"></div><!-- Empty content to flex align the title in the center -->
+        </div>
+
+        <main id="homepage">
+            <article class="welcome">
+                Lost in the forest of acronyms, strange or unkown words ? We help you below understanding what they mean !
+             </article>
+            <div id="glossaryLinks">                
+                <p>
+                A | B | <a href="#C">C</a> | D | E | F | G | <a href="#H">H</a> | I | <a href="#J">J</a> | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z
+                </p>
+            </div>
+            <!-- <article class="glossary">
+                <div id="A"><span class="headLetter">A</span></div>
+                <div id="B"><span class="headLetter">B</span></div> -->
+                <div id="C">
+                    <span class="headLetter">C</span>
+                    <dl>
+                        <dt id="css">CSS</dt>
+                        <dd>CSS, stands for Cascading Style Sheet <br>                            
+                            
+                        </dd>
+                    </dl>
+                <!-- </div> 
+                <div id="D"><span class="headLetter">D</span></div>
+                <div id="E"><span class="headLetter">E</span></div>
+                <div id="F"><span class="headLetter">F</span></div>
+                <div id="G"><span class="headLetter">G</span></div> -->
+                <div id="H">
+                    <span class="headLetter">H</span>
+                    <dl>
+                        <dt id="html">HTML</dt>
+                        <dd><i class="fab fa-html5"></i> HTML, stands for HyperText Markup Language <br>                            
+                            HTML is a markup language that web browsers use to interpret and compose text, images, and other material into visual or audible web pages. <br>
+                            The first publicly available description of HTML was a document called "HTML Tags", first mentioned on the Internet by Tim Berners-Lee in late 1991<br>                            
+                            Default characteristics for every item of HTML markup are defined in the browser, and these characteristics can be altered or enhanced by the web page designer's additional use of <a href="#css">CSS</a>.                            
+                            Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. <br>
+                            HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+                        </dd>
+                    </dl>
+                </div>
+                <!-- <div id="I"><span class="headLetter">I</span></div> -->
+                <div id="J">
+                    <span class="headLetter">J</span>
+                    <dl>
+                        <dt id="javascript">Javascript</dt>
+                        <dd>Javascript (not related to the langage Java by the way), is an open-source and likely the most popular client-side scripting language supported by all web browsers. <br>
+                        </dd>
+                    </dl>
+                </div>
+            </article>
+        </main>
+
+        <footer class="footer">            
+            <a href="glossary.html">Glossary</a>
+            <a href="contact.html">Contact us</a>
+        </footer>
+    </body>
+
+</html>
