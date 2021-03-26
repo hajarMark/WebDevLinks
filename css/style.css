@@ -152,7 +152,9 @@ h2 ~ div {
     display: flex;
     flex-flow: column nowrap;
     margin-top: 80px;
+    margin-bottom: 80px;
     color: #588c7e;
+	margin-bottom: 60px;
 }
 
 .theme {
@@ -199,6 +201,86 @@ h2 ~ div {
     align-items: space-around;
     margin-left: 3vw;
   }
+  
+  
+/*************************************
+    contact pages styles
+*****************************************/
+.flex_container h2 {
+  color: #474544;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+  padding:0;
+  border:50px 0 0 0 ;
+  margin-bottom: 60px;
+}
+
+.image_contact{
+	flex-flow:row wrap;
+	justify-content:center;
+	height:30px;
+	width: 30px;
+}
+.name{
+	 text-align: right;
+}
+
+.flex_container{
+	display:flex;
+	flex-flow: column wrap;
+}
+
+.flex_item_margin{
+	display:flex;
+	flex-flow:column wrap;
+	justify-content:flex-start;
+	width: 800px;
+	padding:10px;
+	margin:0 0 0 50px;
+}
+
+.flex_item_bouton{
+	display:flex;
+	flex-flow:column wrap;
+	justify-content:flex-start;
+	width: 50px;
+	padding:10px;
+	margin:50px;
+}
+
+.flex_item{
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	padding:10px;
+}
+
+.flex_item_center{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding:10px;
+}
+
+@media screen and (max-width: 1100px) {
+
+	.flex_container h2 {
+		font-size: 18px;
+		}
+
+	.flex_item_margin{
+		display:flex;
+		flex-flow:column wrap;
+		justify-content:flex-start;
+		width: 500px;
+		padding:10px;
+		margin:0 0 0 20px;
+		}
+}
+
 
 /*************************************
     Footer style

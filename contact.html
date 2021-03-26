@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The essential links for web development</title>
+		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <!-- Lets use some nice icons set :) -->
+        <script src="https://kit.fontawesome.com/8e8aa578fc.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <!--
+                    A fake / hidden checkbox is used as click reciever so you can use the :checked selector on it.
+                    -->
+                    <input type="checkbox" />                    
+                    <!--
+                    Some spans to act as a hamburger.
+                    -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="index.html"><li>Home</li></a>
+                        <a href="glossary.html"><li>Glossary</li></a>
+                        <a href="theme_html.html"><li>Html Links</li></a>
+                        <a href="contactus.html"><li>Contact us</li></a>
+                    </ul>
+                </div>
+            </nav>
+            <header><h1 class="pageTitle">The web developpers vault</h1></header>            
+            <div class="right"></div><!-- Empty content to flex align the title in the center -->
+        </div>
+
+        <main id="contact_us">			
+				
+			<form class="flex_container">
+				
+				<p class="flex_item_center"><h2 class="contact_title">Question and feedback</h2></p>
+				
+				<div class="name flex_item_margin">
+					<label for="name"></label>
+					<input type="text" placeholder="My name is" name="name" id="name_input" required>
+				</div>
+				
+
+				<div class="email flex_item_margin">
+					<label for="email"></label>
+					<input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+				</div>
+				
+				<div class="subject flex_item_margin">
+					<label for="subject"></label>
+					<select placeholder="Subject line" name="subject" id="subject_input" required>
+						<option disabled hidden selected>Subject line</option>
+						<option>I'd like to ask a question</option>
+						<option>I'd like to make a proposal</option>
+					</select>
+				</div>
+				
+				<div class="message flex_item_margin">
+					<label for="message"></label>
+					<textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5" required></textarea>
+				</div>
+				
+				<div class="submit flex_item_bouton">
+					<input type="submit" value="Send Message" id="form_button" />
+				</div>
+
+			</form><!-- // End form -->
+				
+				
+        </main>
+
+        <footer class="footer">            
+            <a href="glossary.html">Glossary</a>
+            <a href="contact.html">Contact us</a>
+        </footer>
+    </body>
+
+</html>
