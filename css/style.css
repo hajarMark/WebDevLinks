@@ -120,29 +120,34 @@ body {
     margin-bottom: 0;
 }
 
-/* A way to size all images for the themes */
-h2 ~ div {
-    font-size: 20em;
-}
-
 .hmtlicon {
     color: #fd7e14;
+    font-size: 20em;
 }
 
 .cssicon {
     color: #82c91e;
+    font-size: 20em;
 }
 
 .jsicon {
     color: #be4bdb;
+    font-size: 20em;
 }
 
 .phpicon {
     color: #7377ad;
+    font-size: 20em;
 }
 
 .sqlicon {
     color: #4c6ef5;
+    font-size: 20em;
+}
+
+/* A way to size all images for the themes on home page*/
+h2 ~ div {
+    font-size: 20em;
 }
 
 /*************************************
@@ -298,7 +303,7 @@ h2 ~ div {
 }
 
 .footer a {
-    font-size: 14px;
+    font-size: 16px;
     color: white;
     padding: 14px 16px;
     text-decoration: none;

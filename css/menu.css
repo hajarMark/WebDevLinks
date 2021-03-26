@@ -8,6 +8,7 @@
 *****************************************/
 .navbar {
     display: flex;
+    flex-flow: wrap;
     position:fixed;
     top:0;
     left:0;
@@ -16,14 +17,11 @@
     justify-content: space-between;
 }
 
-.menugroup {
-  width: 200px;
-  display: flex;
-  flex-flow: column nowrap;
-}
-
 .flatmenu {
-  margin-left: 40px;
+  position: fixed;
+  top: 0;
+  left: 120px;
+  margin-top: 22px;  
 }
 
 .flatmenu a {  
@@ -124,7 +122,7 @@
   position: absolute;
   width: 180px;
   margin: -100px 0 0 -50px;
-  /* padding: 50px; */
+  padding: 50px;
   padding-top: 100px;  
   background: #588c7e;
   list-style-type: none;

@@ -16,7 +16,8 @@
 }
 
 .headLetter {
-    font-family: 'Berkshire Swash', cursive;
+    /* font-family: 'Berkshire Swash', cursive; */
+    font-family: 'Roboto', sans-serif;
     font-size: 80px;
     font-weight: bold;
 }
