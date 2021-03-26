@@ -16,12 +16,28 @@
     justify-content: space-between;
 }
 
+.menugroup {
+  width: 200px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.flatmenu {
+  margin-left: 40px;
+}
+
+.flatmenu a {  
+  text-decoration: none;
+  color: white;  
+  font-size: 20px;
+}
+
 #menuToggle {
     display: inline-block;    
     z-index: 1;  
     -webkit-user-select: none;
     user-select: none;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 #menuToggle a {
@@ -51,7 +67,7 @@
 /*
  * Just a quick hamburger
  */
-#menuToggle span {
+.burger {
   display: block;
   width: 33px;
   height: 4px;
@@ -108,7 +124,7 @@
   position: absolute;
   width: 180px;
   margin: -100px 0 0 -50px;
-  padding: 50px;
+  /* padding: 50px; */
   padding-top: 100px;  
   background: #588c7e;
   list-style-type: none;

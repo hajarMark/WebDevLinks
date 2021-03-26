@@ -22,8 +22,8 @@ body {
 .pageTitle {    
     font-size: 26px;
     color: white;
+    font-variant: small-caps;
 }
-
 
 /*******************************************************
     course level key : beginner/intermediate/advanced;
@@ -66,7 +66,7 @@ body {
 }
 
 .welcome {
-    background-color: #f2e394;
+    background-color: #ffeead;
     font-family: 'Lato', sans-serif;
     width: 100%;
     text-align: center;
@@ -74,6 +74,7 @@ body {
     padding-top: 30px;
     font-size: 16px;
     margin-top: 60px;
+    padding-bottom: 20px;
 }
 
 .themediv {    
@@ -108,7 +109,7 @@ body {
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    width: 320px;
+    width: 400px;
 }
 
 .themediv h2 {
@@ -119,21 +120,30 @@ body {
     margin-bottom: 0;
 }
 
+/* A way to size all images for the themes */
+h2 ~ div {
+    font-size: 20em;
+}
+
 .hmtlicon {
     color: #fd7e14;
-    font-size: 20em;
 }
 
 .cssicon {
     color: #82c91e;
-    font-size: 20em;
 }
 
 .jsicon {
     color: #be4bdb;
-    font-size: 20em;
 }
 
+.phpicon {
+    color: #7377ad;
+}
+
+.sqlicon {
+    color: #4c6ef5;
+}
 
 /*************************************
     Theme pages styles
@@ -177,9 +187,11 @@ body {
     padding-bottom: 1.5px; 
 
 }
-.logo{
+
+.logo {
     width: 50px;
 }
+
 .description_link {
     display: flex;
     flex-flow: column wrap;
