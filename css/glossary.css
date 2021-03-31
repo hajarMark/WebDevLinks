@@ -5,6 +5,9 @@
     text-align: center;
     font-variant: small-caps;
     font-size: 18px;
+    position: sticky;
+    top: 50px ;
+    background-color: white;
 }
 
 .glossary {

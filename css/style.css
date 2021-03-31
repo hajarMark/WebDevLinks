@@ -67,7 +67,7 @@ body {
     font-family: 'Lato', sans-serif;
     width: 100%;
     text-align: center;
-    height: 80px;
+    height: 15%;
     padding-top: 30px;
     font-size: 16px;
     margin-top: 60px;
@@ -280,7 +280,6 @@ h2 ~ div {
 }
 
 @media screen and (max-width: 1100px) {
-
 	.flex_container h2 {
 		font-size: 18px;
 		}
@@ -320,4 +319,20 @@ h2 ~ div {
 
 .footer a:hover {
     color: royalblue;
+}
+
+
+/****
+    Mobile adjustments 
+****/
+@media screen and (max-width: 600px) {
+    .pageTitle { 
+        font-size:larger;
+    }
+
+    .themediv {
+        margin-top: 20px;
+    }
+    
+    .hmtlicon, .cssicon, .jsicon, .phpicon, .sqlicon { font-size: 14em; }    
 }
