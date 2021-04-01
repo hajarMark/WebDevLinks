@@ -8,20 +8,38 @@
 *****************************************/
 .navbar {
     display: flex;
+    flex-flow: wrap;
     position:fixed;
     top:0;
     left:0;
     width: 100%;
     background-color: #588c7e;
     justify-content: space-between;
+    z-index:1; 
+}
+
+.flatmenu {
+  position: fixed;
+  top: 0;
+  left: 120px;
+  margin-top: 22px;  
+}
+
+.flatmenu a {  
+  text-decoration: none;
+  color: white;  
+  font-size: 20px;
+}
+
+.flatmenu a:hover {  
+  color: royalblue;
 }
 
 #menuToggle {
     display: inline-block;    
-    z-index: 1;  
-    -webkit-user-select: none;
+    z-index: 1; 
     user-select: none;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 #menuToggle a {
@@ -51,7 +69,7 @@
 /*
  * Just a quick hamburger
  */
-#menuToggle span {
+.burger {
   display: block;
   width: 33px;
   height: 4px;
@@ -67,8 +85,9 @@
               opacity 0.55s ease;
 }
 
-#menuToggle span:first-child {
+#menuToggle span:first-child {  
   transform-origin: 0% 0%;
+  margin-top: 0px;
 }
 
 #menuToggle span:nth-last-child(2) {
@@ -126,4 +145,16 @@
 
 #menuToggle input:checked ~ ul {
   transform: none;
+}
+
+
+/****
+    Mobile adjustments for the menu
+****/
+@media screen and (max-width: 600px) {
+
+  .flatmenu {
+      visibility: hidden;
+      display: none;
+  }
 }

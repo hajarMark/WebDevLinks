@@ -5,6 +5,9 @@
     text-align: center;
     font-variant: small-caps;
     font-size: 18px;
+    position: sticky;
+    top: 50px ;
+    background-color: white;
 }
 
 .glossary {
@@ -16,7 +19,8 @@
 }
 
 .headLetter {
-    font-family: 'Berkshire Swash', cursive;
+    /* font-family: 'Berkshire Swash', cursive; */
+    font-family: 'Roboto', sans-serif;
     font-size: 80px;
     font-weight: bold;
 }
