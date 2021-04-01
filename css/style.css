@@ -215,8 +215,7 @@ h2 ~ div {
     align-items: space-around;
     margin-left: 2vw;
   }
-  
-  
+
 /*************************************
     contact pages styles
 *****************************************/
@@ -279,22 +278,6 @@ h2 ~ div {
 	padding:10px;
 }
 
-@media screen and (max-width: 1100px) {
-	.flex_container h2 {
-		font-size: 18px;
-		}
-
-	.flex_item_margin{
-		display:flex;
-		flex-flow:column wrap;
-		justify-content:flex-start;
-		width: 500px;
-		padding:10px;
-		margin:0 0 0 20px;
-		}
-}
-
-
 /*************************************
     Footer style
 *****************************************/
@@ -325,6 +308,20 @@ h2 ~ div {
 /****
     Mobile adjustments 
 ****/
+@media screen and (max-width: 1100px) {
+	.flex_container h2 {
+		font-size: 18px;
+		}
+
+	.flex_item_margin{
+		display:flex;
+		flex-flow:column wrap;
+		justify-content:flex-start;
+		width: 500px;
+		padding:10px;
+		margin:0 0 0 20px;
+		}
+}
 @media screen and (max-width: 600px) {
     .pageTitle { 
         font-size:larger;
