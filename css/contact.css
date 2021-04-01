@@ -5,7 +5,6 @@
 .flex_container {
     display : flex;
 	flex-flow: column wrap;
-    align-Items : center;
     justify-content: center;
     color: #3b5e55;
   }
@@ -75,10 +74,7 @@
 		}
 
 	.flex_item_margin{
-		display:flex;
-		flex-flow:column wrap;
-		justify-content:flex-start;
-		width: 500px;
+		width: calc(100% - 100px);
 		padding:10px;
 		margin:0 0 0 20px;
 		}
@@ -94,7 +90,7 @@
 		}
 
 	.flex_item_margin{
-		width: 300px;
+		width: 80%;
 		margin:0 0 0 10px;
 		}
 }
