@@ -102,6 +102,32 @@ body {
     opacity: 0.97;
 }
 
+.themediv:hover .move-logo {
+    opacity: 0.17;
+    animation-name: slideLogo;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slideLogo {
+  0% {
+    transform: scale(1.05);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  75% {
+    transform: scale(0.90);
+  }
+  100% {
+    transform: scale(0.85);
+  }
+}
+
 .themediv a {
     display: inline-block;
     text-align: center;
