@@ -12,17 +12,9 @@
     margin-right: 20px;
 }
 
-#glossaryLinks a, #glossaryLinks a:visited {
+#homepage a, #homepage a:visited {
     font-weight: bold;
     color: #588c7e;
-}
-
-.glossary {
-    display: flex;
-    margin-left: 20px;
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 .headLetter {
@@ -31,6 +23,14 @@
     font-size: 80px;
     font-weight: bold;
     margin-left: 20px;
+}
+
+.glossary {
+    display: flex;
+    margin-left: 20px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 dt {
