@@ -78,6 +78,7 @@ body {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    position: relative;
     margin-top: 100px;
 }
 
@@ -99,32 +100,6 @@ body {
 .themediv:hover .themedescription {
     visibility: visible;
     opacity: 0.97;
-}
-
-.themediv:hover .move-logo {
-    opacity: 0.17;
-    animation-name: slideLogo;
-    animation-duration: 0.8s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-@keyframes slideLogo {
-  0% {
-    transform: scale(1.05);
-  }
-  25% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.95);
-  }
-  75% {
-    transform: scale(0.90);
-  }
-  100% {
-    transform: scale(0.85);
-  }
 }
 
 .themediv a {
@@ -192,7 +167,7 @@ h2 ~ div {
 
 .legend {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     color: #588c7e;
@@ -201,12 +176,6 @@ h2 ~ div {
     text-decoration: none;
     margin-right: 2vw;
 }
-
-.caption {
-    display: flex;
-    flex-flow: row nowrap;
-}
-
 
 .description {
   display: flex;
@@ -235,15 +204,6 @@ h2 ~ div {
 
 }
 
-.link_ {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 2vw;
-}
-
-
 .logo {
     width: 50px;
 }
@@ -253,7 +213,7 @@ h2 ~ div {
     flex-flow: column wrap;
     justify-content: center;
     align-items: space-around;
-    margin-left: 1.6vw;
+    margin-left: 2vw;
   }
 
 /*************************************
