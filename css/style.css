@@ -182,7 +182,6 @@ h2 ~ div {
     flex-flow: row nowrap;
 }
 
-
 .description {
   display: flex;
   flex-flow: column wrap;
@@ -217,7 +216,6 @@ h2 ~ div {
     align-items: center;
     padding-left: 2vw;
 }
-
 
 .logo {
     width: 50px;
