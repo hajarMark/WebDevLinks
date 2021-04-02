@@ -79,7 +79,7 @@ body {
     flex-flow: row nowrap;
     justify-content: center;
     position: relative;
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 .themedescription {
@@ -100,6 +100,13 @@ body {
 .themediv:hover .themedescription {
     visibility: visible;
     opacity: 0.97;
+}
+
+.themediv a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 400px;
 }
 
 .themediv:hover .move-logo {
@@ -126,13 +133,6 @@ body {
   100% {
     transform: scale(0.85);
   }
-}
-
-.themediv a {
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    width: 400px;
 }
 
 .themediv h2 {
@@ -208,7 +208,6 @@ h2 ~ div {
     flex-flow: row nowrap;
 }
 
-
 .description {
   display: flex;
   flex-flow: column wrap;
@@ -244,7 +243,6 @@ h2 ~ div {
     padding-left: 2vw;
 }
 
-
 .logo {
     width: 50px;
 }
@@ -255,7 +253,7 @@ h2 ~ div {
     justify-content: center;
     align-items: space-around;
     margin-left: 1.6vw;
-  }
+}
 
 /*************************************
     contact pages styles

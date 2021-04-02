@@ -18,7 +18,7 @@
     <body>
         <div class="navbar">
             <div class="menugroup">
-                <nav role="navigation">
+                <nav>
                     <div id="menuToggle">
                         <!-- A fake / hidden checkbox is used as click reciever so you can use the :checked selector on it. -->
                         <input type="checkbox" />                    
@@ -27,13 +27,14 @@
                         <span class="burger"></span>
                         <span class="burger"></span>
                         <ul id="menu">
-                            <a href="index.html"><li>Home</li></a>
-                            <a href="glossary.html"><li>Glossary</li></a>
-                            <a href="theme_html.html"><li>Html Links</li></a>    
-                            <a href="theme_css.html"><li>Css Links</li></a>
-                            <a href="theme_php.html"><li>Php Links</li></a>
-                            <a href="theme_sql.html"><li>SQL Links</li></a>
-                            <a href="contact.html"><li>Contact us</li></a>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="glossary.html">Glossary</a></li>
+                            <li><a href="theme_html.html">Html Links</a></li>                        
+                            <li><a href="theme_js.html">Javascript Links</a></li>
+                            <li><a href="theme_css.html">Css Links</a></li>
+                            <li><a href="theme_php.html">Php Links</a></li>
+                            <li><a href="theme_sql.html">SQL Links</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -47,20 +48,18 @@
                 <section class="theme">
                     <span class="hmtlicon"><i class="fab fa-js-square"></i></span>
                     <a class="description">
-                        <h1> JavaScript (JS) </h1>
-                        <span>
+                        <h2> JavaScript (JS) </h2>
                             <p> JavaScript is an open-source and most popular client-side scripting language supported by all browsers.<br> 
                                 JavaScript is mainly used for enhancing the interaction of the webpage with users by making it more lively and interactive.
                                 <br> It is also used for game development and mobile.
                             </p>  
-                        </span>
                     </a>  
                 </section>
-                <span class="legend"><h4>&nbsp;Legend&nbsp;:&nbsp;</h4>
-                    <p class="beginner">B</p><p>&nbsp;=&nbsp;Beginner&nbsp;&nbsp;</p>
-                    <p class="intermediate">I</p><p>&nbsp;=&nbsp;Intermediate&nbsp;&nbsp;</p>
-                    <p class="advanced">A</p><p>&nbsp;=&nbsp;Advanced&nbsp;</p>
-                </span> 
+                <div class="legend"><h4>&nbsp;Caption&nbsp;:&nbsp;</h4>
+                    <div class="caption"><p class="beginner">B</p><p>&nbsp;=&nbsp;Beginner&nbsp;&nbsp;</p></div>
+                    <div class="caption"><p class="intermediate">I</p><p>&nbsp;=&nbsp;Intermediate&nbsp;&nbsp;</p></div>
+                    <div class="caption"><p class="advanced">A</p><p>&nbsp;=&nbsp;Advanced&nbsp;</p></div>
+                </div>   
                 <section class="tutorials">
                     <h3>Tutorials</h3>
                     <ul> 
@@ -114,5 +113,6 @@
         <footer class="footer">            
             <a href="glossary.html">Glossary</a>
             <a href="contact.html">Contact us</a>
+            <a href="legal.html">Legal Notice</a>
         </footer>
     </body>

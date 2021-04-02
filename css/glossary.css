@@ -8,6 +8,13 @@
     position: sticky;
     top: 50px ;
     background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#glossaryLinks a, #glossaryLinks a:visited {
+    font-weight: bold;
+    color: #588c7e;
 }
 
 .glossary {
@@ -23,6 +30,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 80px;
     font-weight: bold;
+    margin-left: 20px;
 }
 
 dt {
@@ -34,7 +42,5 @@ dt {
 }
 
 dd {
-    margin-bottom: 25px;
-    margin-top: 10px;
-    margin-left: 60px;
+    margin: 10px 25px 25px 60px;
 }
