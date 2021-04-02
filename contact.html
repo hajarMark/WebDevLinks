@@ -14,6 +14,18 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
         <!-- Lets use some nice icons set :) -->
         <script src="https://kit.fontawesome.com/8e8aa578fc.js" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            function sendMessage() {
+                let name = document.getElementById('name_input');
+                let email = document.getElementById('email_input');
+                let subject = document.getElementById('subject_input');
+                let message = document.getElementById('message_input');
+
+                if(name.validity.valid & email.validity.valid & subject.validity.valid & message.validity.valid) {
+                  alert('Your message has been sent');
+                }
+            }
+        </script>
     </head>
 
     <body>
@@ -78,11 +90,10 @@
 				</div>
 				
 				<div class="submit flex_item_bouton">
-					<input type="submit" value="Send Message" id="form_button" />
+					<input type="submit" value="Send Message" id="form_button" onclick="sendMessage();" />
 				</div>
 
 			</form><!-- // End form -->
-				
 				
         </main>
 
