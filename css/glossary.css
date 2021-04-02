@@ -12,6 +12,11 @@
     margin-right: 20px;
 }
 
+#glossaryLinks a, #glossaryLinks a:visited {
+    font-weight: bold;
+    color: #588c7e;
+}
+
 .glossary {
     display: flex;
     margin-left: 20px;
