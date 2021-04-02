@@ -7,9 +7,11 @@
 	flex-flow: column wrap;
     justify-content: center;
     color: #3b5e55;
+	padding : 20px;
   }
 
 .flex_container h1 {
+  display:block;
   color: #3b5e55;
   font-size: 32px;
   font-weight: 700;
@@ -29,8 +31,6 @@
 	height:30px;
 	width: 30px;
 }
-
-
 
 .flex_item_margin{
 	display:flex;
@@ -57,20 +57,22 @@
 	padding:10px;
 }
 
+/*
 .flex_item_center{
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	padding:10px;
-}
+}*/
 
-@media screen and (min-width: 350px) and (max-width : 800px) {
+@media screen and (min-width: 350px) and (max-width : 1025px) {
 
 	.flex_container h1 {
 		font-size: 25px;
         border:20px 0 0 0 ;
         margin-bottom: 20px;
         margin-top : 40px;
+		padding : 20px;
 		}
 
 	.flex_item_margin{
