@@ -67,7 +67,7 @@ body {
     font-family: 'Lato', sans-serif;
     width: 100%;
     text-align: center;
-    height: 80px;
+    height: 15%;
     padding-top: 30px;
     font-size: 16px;
     margin-top: 60px;
@@ -100,6 +100,32 @@ body {
 .themediv:hover .themedescription {
     visibility: visible;
     opacity: 0.97;
+}
+
+.themediv:hover .move-logo {
+    opacity: 0.17;
+    animation-name: slideLogo;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slideLogo {
+  0% {
+    transform: scale(1.05);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  75% {
+    transform: scale(0.90);
+  }
+  100% {
+    transform: scale(0.85);
+  }
 }
 
 .themediv a {
@@ -167,7 +193,7 @@ h2 ~ div {
 
 .legend {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     color: #588c7e;
@@ -176,6 +202,12 @@ h2 ~ div {
     text-decoration: none;
     margin-right: 2vw;
 }
+
+.caption {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
 
 .description {
   display: flex;
@@ -204,6 +236,15 @@ h2 ~ div {
 
 }
 
+.link_ {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2vw;
+}
+
+
 .logo {
     width: 50px;
 }
@@ -213,10 +254,9 @@ h2 ~ div {
     flex-flow: column wrap;
     justify-content: center;
     align-items: space-around;
-    margin-left: 2vw;
+    margin-left: 1.6vw;
   }
-  
-  
+
 /*************************************
     contact pages styles
 *****************************************/
@@ -279,23 +319,6 @@ h2 ~ div {
 	padding:10px;
 }
 
-@media screen and (max-width: 1100px) {
-
-	.flex_container h2 {
-		font-size: 18px;
-		}
-
-	.flex_item_margin{
-		display:flex;
-		flex-flow:column wrap;
-		justify-content:flex-start;
-		width: 500px;
-		padding:10px;
-		margin:0 0 0 20px;
-		}
-}
-
-
 /*************************************
     Footer style
 *****************************************/
@@ -320,4 +343,33 @@ h2 ~ div {
 
 .footer a:hover {
     color: royalblue;
+}
+
+/****
+    Mobile adjustments 
+****/
+@media screen and (max-width: 1100px) {
+	.flex_container h2 {
+		font-size: 18px;
+		}
+
+	.flex_item_margin{
+		display:flex;
+		flex-flow:column wrap;
+		justify-content:flex-start;
+		width: 500px;
+		padding:10px;
+		margin:0 0 0 20px;
+		}
+}
+@media screen and (max-width: 600px) {
+    .pageTitle { 
+        font-size:larger;
+    }
+
+    .themediv {
+        margin-top: 20px;
+    }
+    
+    .hmtlicon, .cssicon, .jsicon, .phpicon, .sqlicon { font-size: 14em; }    
 }

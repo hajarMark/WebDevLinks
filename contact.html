@@ -7,6 +7,7 @@
         <title>The essential links for web development</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/contact.css">
         <!-- A fancy set of font -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
@@ -18,7 +19,7 @@
     <body>
         <div class="navbar">
             <div class="menugroup">
-                <nav role="navigation">
+                <nav id="navigation">
                     <div id="menuToggle">
                         <!-- A fake / hidden checkbox is used as click reciever so you can use the :checked selector on it. -->
                         <input type="checkbox" />                    
@@ -27,13 +28,14 @@
                         <span class="burger"></span>
                         <span class="burger"></span>
                         <ul id="menu">
-                            <a href="index.html"><li>Home</li></a>
-                            <a href="glossary.html"><li>Glossary</li></a>
-                            <a href="theme_html.html"><li>Html Links</li></a>                        
-                            <a href="theme_js.html"><li>Javascript Links</li></a>
-                            <a href="theme_css.html"><li>Css Links</li></a>
-                            <a href="theme_php.html"><li>Php Links</li></a>
-                            <a href="theme_sql.html"><li>SQL Links</li></a>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="glossary.html"><li>Glossary</a></li>
+                            <li><a href="theme_html.html"><li>Html Links</a></li>                       
+                            <li><a href="theme_js.html"><li>Javascript Links</a></li>
+                            <li><a href="theme_css.html"><li>Css Links</a></li>
+                            <li><a href="theme_php.html"><li>Php Links</a></li>
+                            <li><a href="theme_sql.html"><li>SQL Links</a></li>
+                            <li><a href="contact.html"><li>Contact us</</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -47,30 +49,30 @@
 				
 			<form class="flex_container">
 				
-				<p class="flex_item_center"><h2 class="contact_title">Question and feedback</h2></p>
+				<p class="flex_item_center"><h1 class="contact_title">Question and feedback</h1></p>
 				
 				<div class="name flex_item_margin">
-					<label for="name"></label>
+					<label for="name_input"></label>
 					<input type="text" placeholder="My name is" name="name" id="name_input" required>
 				</div>
 				
 
 				<div class="email flex_item_margin">
-					<label for="email"></label>
+					<label for="email_input"></label>
 					<input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
 				</div>
 				
 				<div class="subject flex_item_margin">
-					<label for="subject"></label>
-					<select placeholder="Subject line" name="subject" id="subject_input" required>
-						<option disabled hidden selected>Subject line</option>
-						<option>I'd like to ask a question</option>
-						<option>I'd like to make a proposal</option>
-					</select>
+					<label for="subject_input"></label>
+					<select name="subject" id="subject_input" size=1 required>
+						<option value="">--Subject line--</option>
+						<option value="question">I'd like to ask a question</option>
+						<option value="proposal">I'd like to make a proposal</option>
+                    </select>
 				</div>
 				
 				<div class="message flex_item_margin">
-					<label for="message"></label>
+					<label for="message_input"></label>
 					<textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5" required></textarea>
 				</div>
 				
