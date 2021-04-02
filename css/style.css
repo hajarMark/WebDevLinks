@@ -167,7 +167,7 @@ h2 ~ div {
 
 .legend {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     color: #588c7e;
@@ -176,6 +176,12 @@ h2 ~ div {
     text-decoration: none;
     margin-right: 2vw;
 }
+
+.caption {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
 
 .description {
   display: flex;
@@ -204,6 +210,15 @@ h2 ~ div {
 
 }
 
+.link_ {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2vw;
+}
+
+
 .logo {
     width: 50px;
 }
@@ -213,8 +228,8 @@ h2 ~ div {
     flex-flow: column wrap;
     justify-content: center;
     align-items: space-around;
-    margin-left: 2vw;
-  }
+    margin-left: 1.6vw;
+}
 
 /*************************************
     contact pages styles
